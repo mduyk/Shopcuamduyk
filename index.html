@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+
+<!-- ❌ KHÓA ZOOM -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Shop Proxy mduyk~</title>
+
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    color: white;
+
+    /* 🖼️ ẢNH NỀN */
+    background: url("avatar.jpg") no-repeat center center/cover;
+}
+
+/* LỚP MỜ */
+.overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+/* BOX */
+.box {
+    background: rgba(30, 41, 59, 0.8);
+    margin: 15px auto;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+button {
+    background: #fb7185;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f43f5e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>Shop Proxy mduyk~</h1>
+
+<div class="box">
+    <h3>Proxy Ngày</h3>
+    <p>10.000đ</p>
+    <button onclick="buy('ngay')">Mua ngay</button>
+</div>
+
+<div class="box">
+    <h3>Proxy Tuần</h3>
+    <p>40.000đ</p>
+    <button onclick="buy('tuan')">Mua ngay</button>
+</div>
+
+<div class="box">
+    <h3>Proxy Tháng</h3>
+    <p>60.000đ</p>
+    <button onclick="buy('thang')">Mua ngay</button>
+</div>
+
+<div class="box">
+    <h3>Proxy Vĩnh viễn</h3>
+    <p>300.000đ</p>
+    <button onclick="buy('vinhvien')">Mua ngay</button>
+</div>
+
+</div>
+
+<script>
+function buy(type) {
+    window.location.href = "pay.html?goi=" + type;
+}
+</script>
+
+</body>
+</html>
